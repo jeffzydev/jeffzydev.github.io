@@ -116,7 +116,7 @@ nav li a:hover {
   margin-top: 150px;
   text-align: center;
   font-size: 40px;
-  color: #4caf50;
+  color: white;
   font-weight: 400;
   font-style: normal;
   animation: fadeInName 1s ease-in-out;
@@ -125,7 +125,7 @@ nav li a:hover {
 .subtitle {
   text-align: center;
   font-size: 45px;
-  color: whitesmoke;
+  color: #4caf50;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
