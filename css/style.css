@@ -140,6 +140,8 @@ nav li a:hover {
   animation: pulse 1s infinite alternate;
 }
 #icones {
+  position: relative;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   margin-top: 55px;
