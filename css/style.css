@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Pacifico&family=Protest+Riot&display=swap");
+
+@keyframes fadeInName {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/*Início CSS do Bootstrap*/
+
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #333;
+  text-shadow: none;
+}
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+/*Fim CSS do Bootstrap*/
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+  background-color: #000000;
+  height: 0;
+  position: relative;
+  z-index: 1;
+}
+
+nav li {
+  text-align: center;
+  display: inline-block;
+}
+nav li a {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  color: rgb(124, 124, 124);
+  text-decoration: none;
+  padding: 15px;
+  font-size: 40px;
+}
+nav li a:hover {
+  color: white;
+}
+
+#photo {
+  margin-right: 100px;
+  margin-top: 150px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 16px 7px 1px 3px #4caf50;
+}
+.icon {
+    width: 50px;
+    height: auto;
+    margin: 10px; 
+}
+.title {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  animation: fadeInName 1s ease-in-out;
+
+}
+.subtitle {
+  text-align: center;
+  font-size: 45px;
+  color: #4caf50;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  animation: pulse 1s infinite alternate;
+}
+#icones {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+#icones i {
+  border-radius: 50px;
+  transition: all 0.2s;
+  margin-right: 5px;
+  margin-left: 5px;
+}
