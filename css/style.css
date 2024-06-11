@@ -1,0 +1,120 @@
+@keyframes fadeIn {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.01);
+  }
+}
+@keyframes hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+body {
+  background-color: rgb(231, 231, 231);
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+  height: 0;
+  position: relative;
+  z-index: 1;
+}
+nav a {
+  transition: all 0.4s;
+}
+nav a:hover {
+  background-color: rgb(235, 235, 235);
+}
+.copy-message {
+  display: none;
+  color: green;
+  font-size: 0.9em;
+}
+.hand {
+  display: inline-block;
+  animation: hand 1s ease-out;
+}
+#photo {
+  margin-top: 1.5rem;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  box-shadow: 16px 7px 1px 3px #4caf50;
+}
+
+.icon {
+  width: 38px;
+  height: auto;
+  margin: 7px;
+}
+
+.title {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color: black;
+  font-weight: 400;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  color: #4caf50;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  animation: pulse 1s infinite alternate;
+}
+
+.subsubtitle {
+  font-size: 2.5rem;
+  color: #4caf50;
+  font-weight: 400;
+}
+.box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+#icones {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#icones i {
+  transition: all 0.2s;
+  margin: 0 0.5rem;
+}
+
+#icones i:hover {
+  transform: scale(1.1);
+}
