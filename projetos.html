@@ -9,20 +9,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
-    <header>
-        <img src="img/logo.png" height="40px" class="position-absolute mt-4" alt="Logo">
-        <nav class="nav nav-masthead justify-content-center mt-4">
-            <a class="link-dark fw-semibold link-offset-3 link-underline-success link-underline-opacity-0 p-2 link-underline-opacity-100-hover p-2" href="index.html">SOBRE</a>
-            <a class="link-dark fw-semibold link-offset-3 link-underline-success p-2" href="projetos.html">PROJETOS</a>
-        </nav>
-        <div class="d-flex justify-content-end align-items-center mt-0 mx-3" id="icones">
-            <span id="copyMessage" class="copy-message">Copiado!</span>
-            <a href="#" id="copyEmailButton" class="icon-link icon-link-hover"><i class="bi bi-envelope-fill text-black fs-4"></i></a>
-            <a href="https://github.com/jeffzydev" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover"><i class="bi bi-github text-black fs-4"></i></a>
-            <a href="https://www.linkedin.com/in/jesse-barbosa-moreira-129446274/" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover"><i class="bi bi-linkedin text-black fs-4"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=5533984238958" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover"><i class="bi bi-whatsapp text-black fs-4"></i></a>
+
+    <header class="container-fluid header-responsive">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center text-md-start">
+                <img src="img/logo.png" height="40px" class="mt-4" alt="">
+            </div>
+            <nav class="col-12 col-md-4 nav nav-masthead justify-content-center">
+                <a class="link-dark fw-semibold link-offset-3 link-underline-success link-underline-opacity-0 link-underline-opacity-100-hover px-2" href="index.html">SOBRE</a>
+                <a class="link-dark fw-semibold link-offset-3 link-underline-success px-2" href="projetos.html">PROJETOS</a>
+            </nav>
+            <div class="col-12 col-md-4 d-flex justify-content-end align-items-center my-4" id="icones">
+                <span id="copyMessage" class="copy-message">Copiado!</span>
+                <a href="#" id="copyEmailButton" class="icon-link icon-link-hover"><i class="bi bi-envelope-fill text-black fs-4"></i></a>
+                <a href="https://github.com/jeffzydev" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover"><i class="bi bi-github text-black fs-4"></i></a>
+                <a href="https://www.linkedin.com/in/jesse-barbosa-moreira-129446274/" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover"><i class="bi bi-linkedin text-black fs-4"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5533984238958" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover"><i class="bi bi-whatsapp text-black fs-4"></i></a>
+            </div>
         </div>
     </header>
+
     <!-- Início do conteúdo -->
     <main class="mt-5 flex-grow-1">
         <div class="container mt-4 py-5">
@@ -99,7 +105,7 @@
     </main>
     <!-- Fim do conteúdo -->
     <!-- Início do Footer -->
-    <footer class="mt-5 text-center text-dark fw-semibold border-bottom border-5 border-success">
+    <footer class="mt-4 text-center text-dark fw-semibold border-bottom border-5 border-success">
         <p>Jessé Barbosa © 2024 | Todos os direitos reservados.</p>
     </footer>
     <!-- Final do Footer -->
