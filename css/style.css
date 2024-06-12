@@ -1,3 +1,24 @@
+.header-responsive {
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .header-responsive {
+    padding-top: 3rem;
+  }
+
+  .header-responsive .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #icones {
+    justify-content: center;
+    position: static;
+    margin-top: 1rem;
+  }
+}
+
 @keyframes fadeIn {
   from {
     transform: translateY(-10%);
@@ -17,6 +38,7 @@
     transform: scale(1.01);
   }
 }
+
 @keyframes hand {
   0% {
     transform: rotate(0deg);
@@ -49,21 +71,26 @@ nav {
   position: relative;
   z-index: 1;
 }
+
 nav a {
   transition: all 0.4s;
 }
+
 nav a:hover {
   background-color: rgb(235, 235, 235);
 }
+
 .copy-message {
   display: none;
   color: green;
   font-size: 0.9em;
 }
+
 .hand {
   display: inline-block;
   animation: hand 1s ease-out;
 }
+
 #photo {
   margin-top: 1.5rem;
   width: 380px;
@@ -96,18 +123,25 @@ nav a:hover {
 
 .subsubtitle {
   font-size: 2.5rem;
-  color: #4caf50;
+  color: #48a54b;
   font-weight: 400;
 }
+
 .box {
   background-color: white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 0px 10px;
+  max-width: 400px;
 }
+
 #icones {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #icones i {
