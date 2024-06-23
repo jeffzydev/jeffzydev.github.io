@@ -127,13 +127,12 @@ nav a:hover {
   font-weight: 400;
 }
 
-.box {
-  background-color: white;
-  border-radius: 5px;
-  padding: 0px 10px;
-  max-width: 400px;
+.card {
+  height: 400px;
 }
-
+.card-text {
+  height: 150px;
+}
 #icones {
   display: flex;
   justify-content: flex-end;
@@ -151,4 +150,16 @@ nav a:hover {
 
 #icones i:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .row-cols-md-2 {
+    --bs-columns: 2;
+  }
+}
+
+@media (max-width: 992px) {
+  .row-cols-lg-4 {
+    --bs-columns: 4;
+  }
 }
