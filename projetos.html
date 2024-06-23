@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
-
     <header class="container-fluid header-responsive">
         <div class="row align-items-center">
             <div class="col-12 col-md-4 text-center text-md-start">
@@ -19,7 +18,7 @@
                 <a class="link-dark fw-semibold link-offset-3 link-underline-success link-underline-opacity-0 link-underline-opacity-100-hover px-2" href="index.html">SOBRE</a>
                 <a class="link-dark fw-semibold link-offset-3 link-underline-success px-2" href="projetos.html">PROJETOS</a>
             </nav>
-            <div class="col-12 col-md-4 d-flex justify-content-end align-items-center my-4" id="icones">
+            <div class="icones col-12 col-md-4 d-flex justify-content-end align-items-center my-4">
                 <span id="copyMessage" class="copy-message">Copiado!</span>
                 <a href="#" id="copyEmailButton" class="icon-link icon-link-hover"><i class="bi bi-envelope-fill text-black fs-4"></i></a>
                 <a href="https://github.com/jesse-barbosa" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover"><i class="bi bi-github text-black fs-4"></i></a>
@@ -28,23 +27,21 @@
             </div>
         </div>
     </header>
-
-    <!-- Início do conteúdo -->
     <main class="mt-5 flex-grow-1">
         <div class="container py-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 p-5 mx-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <!-- Projeto 1 -->
                 <div class="col">
-                    <div class="card border-0 shadow text-center">
+                    <div class="card border-0 shadow text-center h-100">
                         <img src="img/print4.png" class="card-img-top" alt="Projeto 1">
-                        <div class="card-body border-top">
-                            <div class="card-text">
-                            <small class="text-body-secondary text-center">Notten</small>
-                            <p class="card-text">Meu aplicativo (ainda em desenvolvimento) de desenvolvimento e prototipagem de projetos em equipe.</p>
+                        <div class="card-body border-top d-flex flex-column justify-content-between">
+                            <div>
+                                <small class="text-body-secondary text-center">Notten</small>
+                                <p>Meu aplicativo (ainda em desenvolvimento) de desenvolvimento e prototipagem de projetos em equipe.</p>
                             </div>
-                            <div class="card-buttons">
-                                <a href="https://jesse-barbosa.github.io/swiftNote/" class="btn btn-success mt-2 fw-semibold" target="_blank" rel="noopener noreferrer">
-                                Conheça <i class="bi bi-box-arrow-up-right"></i>
+                            <div class="card-buttons mt-2">
+                                <a href="https://jesse-barbosa.github.io/swiftNote/" class="btn btn-success rounded-0 fw-semibold" target="_blank" rel="noopener noreferrer">
+                                    Conheça <i class="bi bi-box-arrow-up-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -52,19 +49,19 @@
                 </div>
                 <!-- Projeto 2 -->
                 <div class="col">
-                    <div class="card border-0 shadow text-center">
-                        <img src="img/print1.png" class="card-img-top" alt="Projeto 3">
-                        <div class="card-body border-top">
-                            <div class="card-text">
-                            <small class="text-body-secondary text-center">Portfólio</small>
-                            <p class="card-text">Meu site pessoal, onde eu me apresento e mostro meu trabalho.</p>
+                    <div class="card border-0 shadow text-center h-100">
+                        <img src="img/print1.png" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body border-top d-flex flex-column justify-content-between">
+                            <div>
+                                <small class="text-body-secondary text-center">Portfólio</small>
+                                <p>Meu site pessoal, onde eu me apresento e mostro meu trabalho.</p>
                             </div>
-                            <div class="card-buttons">
-                                <a href="https://github.com/jesse-barbosa/jesse-barbosa.github.io" class="btn btn-dark fw-semibold py-0 px-1 m-2" target="_blank" rel="noopener noreferrer">
-                                Code <i class="bi bi-github text-light fs-4"></i>
+                            <div class="card-buttons mt-2">
+                                <a href="https://github.com/jesse-barbosa/jesse-barbosa.github.io" class="btn btn-dark rounded-0 fw-semibold m-2" target="_blank" rel="noopener noreferrer">
+                                    Code <i class="bi bi-github text-light fs-4"></i>
                                 </a>
-                                <a href="https://jesse-barbosa.github.io/index.html" class="btn btn-success fw-semibold py-1 px-1 m-2" target="_blank" rel="noopener noreferrer">
-                                Live demo <i class="bi bi-box-arrow-up-right"></i>
+                                <a href="https://jesse-barbosa.github.io/index.html" class="btn btn-success rounded-0 fw-semibold m-2" target="_blank" rel="noopener noreferrer">
+                                    Live demo <i class="bi bi-box-arrow-up-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -72,19 +69,19 @@
                 </div>
                 <!-- Projeto 3 -->
                 <div class="col">
-                    <div class="card border-0 shadow text-center">
-                        <img src="img/print2.png" class="card-img-top" alt="Projeto 2">
-                        <div class="card-body border-top">
-                            <div class="card-text">
-                            <small class="text-body-secondary text-center">Elysium Style</small>
-                            <p class="card-text">Uma loja virtual de moda, com uma variedade de roupas, desde casuais até peças elegantes.</p>
+                    <div class="card border-0 shadow text-center h-100">
+                        <img src="img/print2.png" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body border-top d-flex flex-column justify-content-between">
+                            <div>
+                                <small class="text-body-secondary text-center">Elysium Style</small>
+                                <p>Uma loja virtual de moda, com uma variedade de roupas, desde casuais até peças elegantes.</p>
                             </div>
-                            <div class="card-buttons">
-                                <a href="https://github.com/jesse-barbosa/ElysiumStyle" class="btn btn-dark fw-semibold py-0 px-1 m-2" target="_blank" rel="noopener noreferrer">
-                                Code <i class="bi bi-github text-light fs-4"></i>
+                            <div class="card-buttons mt-2">
+                                <a href="https://github.com/jesse-barbosa/ElysiumStyle" class="btn btn-dark rounded-0 fw-semibold m-2" target="_blank" rel="noopener noreferrer">
+                                    Code <i class="bi bi-github text-light fs-4"></i>
                                 </a>
-                                <a href="https://jesse-barbosa.github.io/ElysiumStyle/" class="btn btn-success fw-semibold py-1 px-1 m-2" target="_blank" rel="noopener noreferrer">
-                                Live demo <i class="bi bi-box-arrow-up-right"></i>
+                                <a href="https://jesse-barbosa.github.io/ElysiumStyle/" class="btn btn-success rounded-0 fw-semibold m-2" target="_blank" rel="noopener noreferrer">
+                                    Live demo <i class="bi bi-box-arrow-up-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -92,16 +89,16 @@
                 </div>
                 <!-- Projeto 4 -->
                 <div class="col">
-                    <div class="card border-0 shadow text-center">
+                    <div class="card border-0 shadow text-center h-100">
                         <img src="img/print3.png" class="card-img-top" alt="Projeto 4">
-                        <div class="card-body border-top">
-                            <div class="card-text">
-                            <small class="text-body-secondary text-center">Twiddle</small>
-                            <p class="card-text">Uma rede social baseada no Twitter, com sistema de conta, postagens, e diferentes temas.</p>
+                        <div class="card-body border-top d-flex flex-column justify-content-between">
+                            <div>
+                                <small class="text-body-secondary text-center">Twiddle</small>
+                                <p>Uma rede social baseada no Twitter, com sistema de conta, postagens, e diferentes temas.</p>
                             </div>
-                            <div class="card-buttons">
-                                <a href="https://github.com/jesse-barbosa/Twiddle" class="btn btn-dark fw-semibold py-0 px-1 m-2" target="_blank" rel="noopener noreferrer">
-                                Code <i class="bi bi-github text-light fs-4"></i>
+                            <div class="card-buttons mt-2">
+                                <a href="https://github.com/jesse-barbosa/Twiddle" class="btn btn-dark rounded-0 fw-semibold m-2" target="_blank" rel="noopener noreferrer">
+                                    Code <i class="bi bi-github text-light fs-4"></i>
                                 </a>
                             </div>
                         </div>
@@ -110,14 +107,9 @@
             </div>
         </div>
     </main>
-    <!-- Fim do conteúdo -->
-    <!-- Início do Footer -->
     <footer class="mt-4 text-center text-dark fw-semibold border-bottom border-5 border-success">
         <p>Jessé Barbosa © 2024 | Todos os direitos reservados.</p>
     </footer>
-    <!-- Final do Footer -->
-
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
