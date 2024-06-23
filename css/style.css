@@ -12,7 +12,7 @@
     align-items: center;
   }
 
-  #icones {
+  .icones {
     justify-content: center;
     position: static;
     margin-top: 1rem;
@@ -91,7 +91,7 @@ nav a:hover {
   animation: hand 1s ease-out;
 }
 
-#photo {
+.photo {
   margin-top: 1.5rem;
   width: 380px;
   height: 380px;
@@ -127,13 +127,7 @@ nav a:hover {
   font-weight: 400;
 }
 
-.card {
-  height: 400px;
-}
-.card-text {
-  height: 150px;
-}
-#icones {
+.icones {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -143,12 +137,12 @@ nav a:hover {
   right: 0;
 }
 
-#icones i {
+.icones i {
   transition: all 0.2s;
   margin: 0 0.5rem;
 }
 
-#icones i:hover {
+.icones i:hover {
   transform: scale(1.1);
 }
 
@@ -162,4 +156,22 @@ nav a:hover {
   .row-cols-lg-4 {
     --bs-columns: 4;
   }
+}
+
+@media (min-width: 768px) {
+  .card-text {
+    height: 120px;
+  }
+
+  .card-body {
+    height: 100%;
+  }
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
 }
